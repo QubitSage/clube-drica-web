@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 <title>Clube Drica 3.0 - Adriana Silveira</title>
 <meta name="description" content="Transforme a sua alimentação cozinhando apenas 1 hora para até 15 dias. Cardápios, listas de compras e aulas em vídeo com a Dra. Adriana Silveira.">
 <link rel="icon" href="images/green-energy-150x150.png" sizes="32x32">
@@ -345,6 +346,140 @@ main,.hero,.footer{overflow-x:clip}
   .footer__top{grid-template-columns:1fr}
   .footer__cols{grid-template-columns:1fr 1fr}
 }
+/* =================== VIDA (etapa 3) =================== */
+:root{
+  --dur-1:120ms; --dur-2:200ms; --dur-3:320ms; --dur-4:600ms;
+  --ease-out:cubic-bezier(.22,1,.36,1); --ease-in-out:cubic-bezier(.65,0,.35,1);
+  --spring:linear(0,.009,.035 2.1%,.141,.281 6.7%,.723 12.9%,.938 16.7%,1.017,1.077,1.121,1.149 24.3%,1.159,1.163,1.161,1.154 29.9%,1.129 32.8%,1.051 39.6%,1.017 43.1%,.991,.977 51%,.974 53.8%,.975 57.1%,.997 69.8%,1.003 76.9%,1);
+}
+/* foco visível em tudo que se toca */
+a,button,summary,[tabindex]{outline:2px solid transparent;outline-offset:6px;transition:outline-offset var(--dur-2) var(--ease-out),outline-color var(--dur-2)}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline-color:var(--lime);outline-offset:3px}
+.paper a:focus-visible,.paper button:focus-visible,.paper summary:focus-visible,.lime a:focus-visible{outline-color:var(--blue)}
+
+/* botões: preenchimento que varre, sobe 2px, aperta no toque */
+.btn{position:relative;overflow:hidden;isolation:isolate;transition:transform var(--dur-3) var(--spring),box-shadow var(--dur-3) var(--ease-out),color var(--dur-2)}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;transform:translateY(102%);transition:transform var(--dur-3) var(--ease-out)}
+.btn--pink::before{background:var(--coral)}
+.btn--white::before{background:var(--lime)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 0 -4px rgba(17,17,17,.18)}
+.btn:hover::before{transform:translateY(0)}
+.btn:active{transform:translateY(0) scale(.97);transition-duration:var(--dur-1)}
+.arrow{transition:transform var(--dur-3) var(--spring)}
+.btn-row:hover .arrow{transform:translateX(10px)}
+.plan__cta{position:relative;overflow:hidden;isolation:isolate;transition:transform var(--dur-3) var(--spring),color var(--dur-2)}
+.plan__cta::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform var(--dur-3) var(--ease-out)}
+.plan__cta:hover{color:var(--white)} .plan__cta:hover::before{transform:scaleX(1)}
+.plan__cta:active{transform:scale(.97)}
+.nav li a{transition:background-color var(--dur-2),color var(--dur-2),transform var(--dur-3) var(--spring)}
+.nav li a:hover{background:var(--white);color:var(--blue);transform:translateY(-2px)}
+.footer__cols a{background:linear-gradient(currentColor,currentColor) left bottom/0 1.5px no-repeat;transition:background-size var(--dur-3) var(--ease-out)}
+.footer__cols a:hover{background-size:100% 1.5px}
+
+/* cartões: endireitam e sobem no hover, forma de dentro gira */
+.card{transition:transform var(--dur-4) var(--spring),box-shadow var(--dur-3) var(--ease-out)}
+.card__shape{transition:transform var(--dur-4) var(--spring)}
+@media (hover:hover) and (pointer:fine){
+  .card:hover{transform:rotate(0) translateY(-14px) scale(1.03);z-index:2;box-shadow:0 18px 0 -8px rgba(17,17,17,.18)}
+  .card:hover .card__shape{transform:rotate(24deg) scale(1.08)}
+  .badge,.quote,.tile{transition:transform var(--dur-3) var(--spring)}
+  .badge:hover{transform:translateY(-8px) rotate(-1.5deg)}
+  .quote:hover{transform:translateY(-6px) rotate(1deg)}
+  .tile:hover{transform:translateY(-6px)}
+  .tile__img img{transition:transform var(--dur-4) var(--ease-out)}
+  .tile:hover .tile__img img{transform:scale(1.05)}
+  .pile li{transition:transform var(--dur-3) var(--spring)}
+  .pile li:hover{transform:rotate(0) scale(1.08) !important;z-index:2}
+}
+
+/* abas: a aba sobe, o painel troca de cor e os pratos entram em sequência */
+.tab{transition:height var(--dur-3) var(--spring),margin-top var(--dur-3) var(--spring),filter var(--dur-2)}
+.tab:hover{filter:brightness(1.06)}
+.tabpanel{transition:background-color var(--dur-3) var(--ease-out),color var(--dur-3)}
+.tabpanel.is-in h3{animation:fadeUp var(--dur-3) var(--ease-out) both}
+.tabpanel.is-in li,.tabpanel.is-in .tabpanel__photo{animation:fadeUp var(--dur-3) var(--ease-out) both;animation-delay:calc(60ms + var(--i,0)*35ms)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* dúvidas: abre com altura animada, o + vira − */
+.faq details{transition:background-color var(--dur-2),border-color var(--dur-2)}
+.faq details:hover{background:#F3F6FE}
+.faq summary i::after{transition:transform var(--dur-3) var(--spring)}
+.faq details[open] summary i::after{display:block;transform:rotate(0)}
+.faq details::details-content{block-size:0;overflow:hidden;transition:block-size var(--dur-3) var(--ease-out),content-visibility var(--dur-3) allow-discrete}
+.faq details[open]::details-content{block-size:auto}
+.faq{interpolate-size:allow-keywords}
+.arrows button{transition:transform var(--dur-3) var(--spring),background-color var(--dur-2)}
+.arrows button:hover{background:rgba(255,255,255,.14)}
+.arrows button:active{transform:scale(.9)}
+
+/* letreiro corre (pausa no hover) */
+.marquee span{animation:marquee 28s linear infinite}
+.marquee:hover span{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ambiente: adesivos respiram devagar */
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-6px) rotate(6deg)}}
+.o-star{animation:spin 14s linear infinite}
+.headline .stk--star,.plan .card__shape{animation:spin 24s linear infinite}
+
+/* ---------- entradas (só com JS, uma vez) ---------- */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity var(--dur-4) var(--ease-out),transform var(--dur-4) var(--ease-out);transition-delay:calc(var(--i,0)*70ms)}
+.js .rv.in{opacity:1;transform:none}
+/* cartões chegam empilhados e abrem em leque */
+.js .cards .card.rv{transform:translateY(60px) rotate(0)}
+.js .cards .card.rv.in:nth-child(odd){transform:rotate(-2.5deg)}
+.js .cards .card.rv.in:nth-child(even){transform:rotate(2deg) translateY(14px)}
+.js .cards .card.rv{transition:opacity var(--dur-3) var(--ease-out),transform 700ms var(--spring);transition-delay:calc(var(--i,0)*80ms)}
+/* pílulas caem no monte */
+.js .pile li.rv{opacity:0;transform:translateY(-90px) rotate(0)}
+.js .pile li.rv{transition:opacity var(--dur-2) var(--ease-out),transform 700ms var(--spring);transition-delay:calc(var(--i,0)*70ms)}
+.js .pile li.rv.in{opacity:1}
+.js .pile li.rv.in:nth-child(6n+1){transform:rotate(-6deg)}
+.js .pile li.rv.in:nth-child(6n+2){transform:rotate(4deg)}
+.js .pile li.rv.in:nth-child(6n+3){transform:rotate(-2deg) translateY(10px)}
+.js .pile li.rv.in:nth-child(6n+4){transform:rotate(5deg)}
+.js .pile li.rv.in:nth-child(6n+5){transform:rotate(-4deg) translateY(-6px)}
+.js .pile li.rv.in:nth-child(6n+6){transform:rotate(-8deg)}
+/* adesivos estouram */
+.js .stk.rv,.js .h1-flower,.js .h1-ast,.js .h1-bolt{opacity:0;transform:scale(0) rotate(-40deg);transition:opacity var(--dur-2),transform 700ms var(--spring)}
+.js .stk.rv.in{opacity:1;transform:none}
+.js .hero.in .h1-flower,.js .hero.in .h1-bolt{opacity:1;transform:rotate(-6deg)}
+.js .hero.in .h1-ast{opacity:1;transform:rotate(14deg)}
+.js .h1-bolt{transition-delay:520ms}.js .h1-flower{transition-delay:600ms}.js .h1-ast{transition-delay:680ms}
+/* título do hero linha por linha */
+.js .hero h1 .h1-line,.js .hero .hero__badge,.js .hero__sub,.js .hero__cta,.js .hero__checks{opacity:0;transform:translateY(28px);transition:opacity 500ms var(--ease-out),transform 600ms var(--ease-out)}
+.js .hero.in h1 .h1-line,.js .hero.in .hero__badge,.js .hero.in .hero__sub,.js .hero.in .hero__cta,.js .hero.in .hero__checks{opacity:1;transform:none}
+.js .hero .hero__badge{transition-delay:0ms}
+.js .hero h1 .h1-line:nth-of-type(1){transition-delay:60ms}
+.js .hero h1 .h1-line:nth-of-type(2){transition-delay:140ms}
+.js .hero h1 .h1-line:nth-of-type(3){transition-delay:220ms}
+.js .hero__sub{transition-delay:320ms}.js .hero__cta{transition-delay:400ms}.js .hero__checks{transition-delay:460ms}
+/* sublinhados e rabiscos se desenham */
+.js .hand{background-size:0 .28em;transition:background-size 700ms var(--ease-out) 300ms}
+.js .in .hand,.js .hand.in{background-size:100% .28em}
+.js .scribble path,.js .manifesto__wave path,.js .footer__mark svg path{stroke-dasharray:var(--len,2000);stroke-dashoffset:var(--len,2000);transition:stroke-dashoffset 1100ms var(--ease-in-out)}
+.js .scribble.in path,.js .manifesto__wave.in path,.js .footer__mark.in svg path{stroke-dashoffset:0}
+/* foto em arco abre de baixo para cima */
+.js .arch{clip-path:inset(100% 0 0 0 round 200px 200px 0 0);transition:clip-path 900ms var(--ease-out)}
+.js .arch.in{clip-path:inset(0 0 0 0 round 200px 200px 0 0)}
+/* wordmark do rodapé sobe */
+.js .footer__mark span{transform:translateY(40%);opacity:0;transition:transform 900ms var(--spring),opacity 400ms}
+.js .footer__mark.in span{transform:none;opacity:1}
+/* faixa de foto com parallax leve */
+.hero__photo img{will-change:transform}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition-duration:120ms !important;transition-delay:0ms !important;scroll-behavior:auto !important}
+  .js .rv,.js .hero h1 .h1-line,.js .hero .hero__badge,.js .hero__sub,.js .hero__cta,.js .hero__checks,.js .footer__mark span{transform:none !important}
+  .js .cards .card.rv:nth-child(odd){transform:rotate(-2.5deg) !important}
+  .js .cards .card.rv:nth-child(even){transform:rotate(2deg) translateY(14px) !important}
+  .js .stk.rv,.js .h1-flower,.js .h1-ast,.js .h1-bolt{transform:none !important}
+  .js .arch{clip-path:none}
+  .js .scribble path,.js .manifesto__wave path,.js .footer__mark svg path{stroke-dashoffset:0 !important}
+  .js .hand{background-size:100% .28em}
+  .hero__photo img{transform:none !important}
+}
 </style>
 </head>
 <body>
@@ -383,7 +518,7 @@ main,.hero,.footer{overflow-x:clip}
     <div class="hero__body">
 
       <span class="hero__badge pill label">Acesso vitalício com 75% de desconto</span>
-      <h1 class="display" aria-label="Transforme a sua alimentação"><span aria-hidden="true"><span class="h1-line">Transf<svg class="o-star" fill="#F0548F"><use href="#i-star"/></svg>rme<svg class="h1-bolt" fill="#CAFA5F"><use href="#i-bolt"/></svg></span><br><span class="h1-line">a sua<svg class="h1-flower" fill="#FC5430"><use href="#i-flower"/></svg><svg class="h1-ast" fill="#B490FC"><use href="#i-ast"/></svg></span><br>alimentação</span></h1>
+      <h1 class="display" aria-label="Transforme a sua alimentação"><span aria-hidden="true"><span class="h1-line">Transf<svg class="o-star" fill="#F0548F"><use href="#i-star"/></svg>rme<svg class="h1-bolt" fill="#CAFA5F"><use href="#i-bolt"/></svg></span><br><span class="h1-line">a sua<svg class="h1-flower" fill="#FC5430"><use href="#i-flower"/></svg><svg class="h1-ast" fill="#B490FC"><use href="#i-ast"/></svg></span><br><span class="h1-line">alimentação</span></span></h1>
       <p class="hero__sub statement">cozinhando apenas <span class="hand hand--white">1 hora</span> para até 15 dias</p>
       <div class="hero__cta btn-row">
         <a class="btn btn--pink" href="https://pay.cakto.com.br/ij3ekbu_416993">Quero começar (4x R$5,77)</a>
@@ -595,7 +730,7 @@ main,.hero,.footer{overflow-x:clip}
 <section class="band blue scallop-both" aria-labelledby="pessoas">
   <div class="wrap center">
     <div class="headline">
-      <h2 class="display-md" id="pessoas">Por que mais de <br>20.000 pessoas <br>já fazem parte?</h2>
+      <h2 class="display-md" id="pessoas">Por que mais de <br><span data-count="20000">20.000</span> pessoas <br>já fazem parte?</h2>
       <svg class="stk stk--star" fill="#F0548F" aria-hidden="true"><use href="#i-star"/></svg>
     </div>
     <svg class="scribble" viewBox="0 0 760 30" aria-hidden="true"><path d="M4 14 C180 6 420 10 740 12 M60 22 C300 16 520 20 700 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
@@ -646,7 +781,7 @@ main,.hero,.footer{overflow-x:clip}
     <p class="lead" style="margin-top:24px">Descubra como o investimento do Clube Drica pode se pagar em 1 semana!</p>
     <div class="plans">
       <article class="plan plan--coral">
-        <div class="plan__head"><span class="plan__tab">Dinheiro</span><p class="plan__stat">Até R$ 1000</p><p>reais de economia por mês</p></div>
+        <div class="plan__head"><span class="plan__tab">Dinheiro</span><p class="plan__stat">Até R$ <span data-count="1000">1000</span></p><p>reais de economia por mês</p></div>
         <svg class="card__shape" fill="#fff" aria-hidden="true" viewBox="0 0 100 100"><use href="#i-flower"/></svg>
         <ul class="plan__rows">
           <li class="plan__qa"><h4>Quanto você gasta hoje comendo fora?</h4><p>Na correria do dia-a-dia acabamos muitas vezes pedindo comida fora (que nem sempre é saudável). Fazendo uma conta simples, podemos ver que os gastos podem chegar a até R$ 1.000 reais por mês.</p></li>
@@ -654,7 +789,7 @@ main,.hero,.footer{overflow-x:clip}
         </ul>
       </article>
       <article class="plan plan--blue">
-        <div class="plan__head"><span class="plan__tab">Tempo</span><p class="plan__stat">+ de 10 horas</p><p>para você, toda semana</p></div>
+        <div class="plan__head"><span class="plan__tab">Tempo</span><p class="plan__stat">+ de <span data-count="10">10</span> horas</p><p>para você, toda semana</p></div>
         <svg class="card__shape" fill="#fff" aria-hidden="true" viewBox="0 0 60 100"><use href="#i-bolt"/></svg>
         <ul class="plan__rows">
           <li class="plan__qa"><h4>Quanto tempo você gasta hoje na cozinha?</h4><p>Você já pensou que gasta até 2 horas por dia fazendo comida e lavando louça? No fim da semana você gastou 14 horas na frente do fogão preparando comida para você ou para sua família.</p></li>
@@ -795,6 +930,43 @@ main,.hero,.footer{overflow-x:clip}
   // setas dos depoimentos
   var row=document.getElementById('badges');
   [].forEach.call(document.querySelectorAll('.arrows button'),function(b){b.addEventListener('click',function(){row.scrollBy({left:+b.dataset.dir*(row.clientWidth*.8),behavior:'smooth'})});});
+})();
+
+// =================== VIDA (etapa 3) ===================
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+  // marca o que entra ao rolar, com atraso em sequência por grupo
+  function mark(sel,group){ $(group||'body').forEach(function(g){ $(sel,g).forEach(function(el,i){el.classList.add('rv');el.style.setProperty('--i',i)}) }) }
+  mark('.cards .card','.cards'); mark('.pile li','.pile'); mark('.quote','.quotes'); mark('.tile','.tiles');
+  mark('.plan','.plans'); mark('.faq details','.faq');
+  $('main .headline, main .kicker, main .lead, main .statement, .panel, .world, .tabs, .footer__top, .manifesto__note').forEach(function(el){el.classList.add('rv')});
+  $('.headline .stk, .stk').forEach(function(el){el.classList.add('rv')});
+  // tamanho real de cada traço para desenhar
+  $('.scribble path, .manifesto__wave path, .footer__mark svg path').forEach(function(p){try{p.style.setProperty('--len',Math.ceil(p.getTotalLength()+2))}catch(e){}});
+  $('.scribble, .manifesto__wave, .arch, .footer__mark, .hand').forEach(function(el){el.classList.add('rv-draw')});
+  mark('.badge','.badges'); var badgeBox=document.getElementById('badges'); var all=$('.rv, .rv-draw').filter(function(el){return !el.classList.contains('badge')});
+  function show(el){el.classList.add('in'); if(el.classList.contains('rv')) setTimeout(function(){el.classList.remove('rv','in')},1600+(+el.style.getPropertyValue('--i')||0)*80); if(el.matches('.statement, .lead, .panel')) $('.hand',el).forEach(function(h){h.classList.add('in')}); count(el)}
+  // contadores
+  function count(scope){ $('[data-count]',scope).concat(scope.matches&&scope.matches('[data-count]')?[scope]:[]).forEach(function(n){
+    if(n.dataset.done||reduce)return; n.dataset.done=1; n.style.display='inline-block'; n.style.minWidth=n.getBoundingClientRect().width+'px'; n.style.fontVariantNumeric='tabular-nums'; var to=+n.dataset.count, fmt=function(v){return to>=10000?Math.round(v).toLocaleString('pt-BR'):String(Math.round(v))}, t0=performance.now(), d=1100;
+    (function step(t){var k=Math.min(1,(t-t0)/d), e=1-Math.pow(1-k,3); n.textContent=fmt(to*e); if(k<1)requestAnimationFrame(step); else n.textContent=fmt(to)})(t0) }) }
+  if(!('IntersectionObserver' in window)||reduce){ all.forEach(show); $('.badge').forEach(show); document.querySelector('.hero').classList.add('in'); }
+  else{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target)}})},{rootMargin:'0px 0px -12% 0px',threshold:.01});
+    all.forEach(function(el){io.observe(el)});
+    if(badgeBox){var bio=new IntersectionObserver(function(es){if(es[0].isIntersecting){$('.badge',badgeBox).forEach(show);bio.disconnect()}},{threshold:.15});bio.observe(badgeBox)}
+    $('[data-count]').forEach(function(n){io.observe(n)});
+    requestAnimationFrame(function(){requestAnimationFrame(function(){document.querySelector('.hero').classList.add('in')})});
+  }
+  // letreiro contínuo: duplica o conteúdo para o laço não ter emenda
+  var mq=document.querySelector('.marquee span'); if(mq){mq.innerHTML+=mq.innerHTML}
+  // abas: conteúdo novo entra em sequência
+  $('[role=tab]').forEach(function(t){t.addEventListener('click',function(){var p=document.getElementById(t.getAttribute('aria-controls'));p.classList.remove('is-in');void p.offsetWidth;$('li',p).forEach(function(li,i){li.style.setProperty('--i',i)});p.classList.add('is-in')})});
+  // parallax leve na faixa de foto (só desktop, só transform)
+  var img=document.querySelector('.hero__photo img'), box=img&&img.parentNode;
+  if(img&&!reduce&&matchMedia('(pointer:fine)').matches){ var ticking=false;
+    addEventListener('scroll',function(){ if(ticking)return; ticking=true; requestAnimationFrame(function(){ var r=box.getBoundingClientRect(); if(r.bottom>0&&r.top<innerHeight){ var k=(r.top+r.height/2-innerHeight/2)/innerHeight; img.style.transform='translateY('+(k*-6).toFixed(2)+'%) scale(1.12)'} ticking=false }) },{passive:true}); }
 })();
 </script>
 </body>
