@@ -37,7 +37,7 @@
   --f-display:"Archivo","Arial Black",sans-serif; --f-text:"Urbanist",system-ui,sans-serif; --f-mark:"Bagel Fat One","Arial Black",sans-serif;
   --wrap:1280px; --side:32px; --s-section:128px; --s-block:56px; --s-gap:24px;
   --r-card:28px; --r-photo:16px; --scallop:72px;
-  --t-display:min(128px,10.4vw); --t-panel:min(72px,10vw); --t-md:min(88px,8.4vw); --t-statement:clamp(22px,2.5vw,36px);
+  --t-display:min(128px,10.4vw); --t-panel:min(80px,10vw); --t-md:min(88px,8.4vw); --t-statement:clamp(22px,2.5vw,36px);
 }
 @media (max-width:760px){:root{--side:16px;--s-section:80px;--s-block:40px;--s-gap:16px;--r-card:22px;--scallop:48px}}
 
@@ -55,6 +55,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .blue{background-color:var(--blue);color:var(--white);background-image:linear-gradient(rgba(255,255,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.12) 1px,transparent 1px);background-size:64px 64px;background-position:center top}
 .lime{background:var(--lime)}
 .section{padding:var(--s-section) 0}
+main,.hero,.footer{overflow-x:clip}
 
 /* vieiras: recorta o topo/baixo do bloco em semicírculos */
 .scallop-top{-webkit-mask:radial-gradient(circle at 50% 100%,#000 calc(var(--scallop)/2 - .5px),transparent calc(var(--scallop)/2)) top center/var(--scallop) calc(var(--scallop)/2) repeat-x,linear-gradient(#000,#000) 0 calc(var(--scallop)/2 - 1px)/100% 100% no-repeat;mask:radial-gradient(circle at 50% 100%,#000 calc(var(--scallop)/2 - .5px),transparent calc(var(--scallop)/2)) top center/var(--scallop) calc(var(--scallop)/2) repeat-x,linear-gradient(#000,#000) 0 calc(var(--scallop)/2 - 1px)/100% 100% no-repeat}
@@ -88,7 +89,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .pill svg{width:14px;height:14px;flex:none}
 
 /* adesivos */
-.stk{position:absolute;pointer-events:none}
+.stk{position:absolute;pointer-events:none;height:auto;aspect-ratio:1}
 
 /* ---------- header + hero ---------- */
 .hero{position:relative;padding-top:20px}
@@ -127,13 +128,13 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .headline .stk--spark{width:48px}
 .kicker{display:inline-flex;margin-bottom:24px}
 .cards{display:flex;justify-content:center;margin-top:var(--s-block);padding:0 8px}
-.card{position:relative;text-align:left;flex:0 1 300px;min-height:430px;padding:var(--r-card) 26px 28px;border-radius:var(--r-card);color:var(--white);overflow:hidden;display:flex;flex-direction:column}
-.card+.card{margin-left:-14px}
+.card{position:relative;text-align:left;flex:0 1 320px;min-height:430px;padding:var(--r-card) 26px 28px;border-radius:var(--r-card);color:var(--white);overflow:hidden;display:flex;flex-direction:column}
+.card+.card{margin-left:-26px}
 .card:nth-child(odd){transform:rotate(-2.5deg)}
 .card:nth-child(even){transform:rotate(2deg) translateY(14px)}
 .card--pink{background:var(--pink)} .card--lilac{background:var(--lilac)} .card--coral{background:var(--coral)} .card--blue{background:var(--blue)} .card--lime{background:var(--lime);color:var(--ink)}
-.card__num{align-self:flex-start;display:inline-flex;align-items:center;justify-content:center;height:28px;min-width:44px;padding:0 12px;border-radius:999px;background:var(--white);color:var(--ink);font:700 14px/1 var(--f-text)}
-.card h3{position:relative;z-index:1;margin-top:14px;font:600 22px/1.15 var(--f-text);text-transform:uppercase}
+.card__num{align-self:flex-start;display:inline-flex;align-items:center;justify-content:center;height:30px;min-width:46px;padding:0 12px;border-radius:999px;border:1.5px solid currentColor;font:500 18px/1 var(--f-text)}
+.card h3{position:relative;z-index:1;margin-top:14px;font:500 24px/1.12 var(--f-text);text-transform:uppercase}
 .card p{position:relative;z-index:1;margin-top:auto;font-size:14px;line-height:1.45}
 .card__shape{position:absolute;width:78%;left:11%;top:30%;opacity:.28}
 .cards--5 .card{flex-basis:248px;min-height:360px}
@@ -161,7 +162,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .panel__text p{font-size:15px;line-height:1.55;max-width:52ch}
 .panel__text p+p{margin-top:10px}
 .panel__text .statement{font-size:22px;margin-bottom:14px}
-.panel__photo{border-radius:var(--r-photo);overflow:hidden;align-self:stretch;min-height:460px;background:#fff}
+.panel__photo{border-radius:var(--r-photo);overflow:hidden;aspect-ratio:940/788;background:#fff}
 .panel__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
 
 /* ---------- letreiro ---------- */
@@ -314,8 +315,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .arch{width:260px;height:280px}
   .manifesto__mid{margin:40px 0}
   .manifesto__wave{height:140px}
-  .headline .stk--ast{width:48px;left:-24px;top:-28px}
-  .headline .stk--star{width:52px;right:-18px;top:-30px}
+  .headline{margin-top:14px}
+  .headline .stk--ast,.world .headline .stk--ast{width:34px;left:2px;right:auto;top:-40px;bottom:auto}
+  .headline .stk--star{width:38px;right:2px;top:-42px}
   .cards{flex-direction:column;align-items:center;padding:0}
   .card,.cards--5 .card{flex:none;width:100%;max-width:360px;min-height:0}
   .card p{margin-top:56px}
@@ -323,7 +325,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .card:nth-child(even){transform:rotate(1.5deg)}
   .pile li{height:44px;padding:0 20px;font-size:14px;margin:0 -2px}
   .panel{grid-template-columns:1fr;padding:32px 22px 22px;gap:28px}
-  .panel__photo{min-height:0;aspect-ratio:940/788}
   .panel__text{margin-top:28px}
   .tabs{padding:0 12px}
   .tab{height:46px;padding:0 16px;font-size:13px;border-radius:14px 14px 0 0}
@@ -422,7 +423,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     <span class="kicker pill label t-blue">praticidade - saúde - sabor</span><br>
     <div class="headline">
       <svg class="stk stk--ast" fill="#B490FC" aria-hidden="true"><use href="#i-ast"/></svg>
-      <h2 class="display t-blue">O que é o<br>Clube Drica?</h2>
+      <h2 class="display t-blue">O que é o <br>Clube Drica?</h2>
       <svg class="stk stk--star" fill="#FC5430" aria-hidden="true"><use href="#i-star"/></svg>
     </div>
     <svg class="scribble" viewBox="0 0 760 30" aria-hidden="true"><path d="M4 14 C180 6 420 10 740 12 M60 22 C300 16 520 20 700 24 L740 26" fill="none" stroke="#3C6CF0" stroke-width="3" stroke-linecap="round"/></svg>
@@ -506,21 +507,21 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     <div class="world lime">
       <span class="kicker pill label">Quais as vantagens do Clube Drica?</span><br>
       <div class="headline">
-        <h2 class="display" id="vantagens">Almoço e jantar<br>sem stress</h2>
+        <h2 class="display" id="vantagens">Almoço e jantar <br>sem stress</h2>
         <svg class="stk stk--ast" fill="#B490FC" aria-hidden="true"><use href="#i-ast"/></svg>
       </div>
       <svg class="scribble" viewBox="0 0 760 30" aria-hidden="true"><path d="M4 14 C180 6 420 10 740 12 M60 22 C300 16 520 20 700 24" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/></svg>
       <p class="lead">No Clube você vai aprender a cozinhar para até 15 dias em 1 hora! Você vai entrar na minha casa e cozinhar junto comigo. Isso mesmo! Os vídeos são uma verdadeira experiência de imersão na minha casa e você vai rapidamente conseguir reproduzir minhas técnicas e preparar refeições variadas e deliciosas.</p>
       <div class="tiles">
         <article class="tile">
-          <div class="tile__img"><img src="https://marianabovolon.com.br/wp-content/uploads/2025/03/mariana-bovolon-pdf-e1741518176754-1024x522.webp" width="1024" height="522" alt="Cardápios e listas de compras em PDF" loading="lazy"></div>
+          <div class="tile__img"><img src="https://marianabovolon.com.br/wp-content/uploads/2025/03/mariana-bovolon-clube-pss-1-1024x576.webp" width="1024" height="576" alt="Cardápios, receitas e listas de compras em PDF" loading="lazy"></div>
           <div class="tile__body">
             <h3>Cardápios detalhados com lista de compras</h3>
             <p>Você receberá cardápios detalhados com as receitas e a lista de compras de mercado com a descrição das quantidades de cada item. Você poderá ajustar as quantidades para fazer a comida individualmente ou para a família toda. As receitas e lista de compras estão em PDF e podem ser impressas!</p>
           </div>
         </article>
         <article class="tile">
-          <div class="tile__img"><img src="https://marianabovolon.com.br/wp-content/uploads/2025/03/mariana-bovolon-clube-pss-1-1024x576.webp" width="1024" height="576" alt="Aula em vídeo sobre alimentação saudável" loading="lazy"></div>
+          <div class="tile__img"><img src="https://marianabovolon.com.br/wp-content/uploads/2025/03/mariana-bovolon-pdf-e1741518176754-1024x522.webp" width="1024" height="522" alt="Aula em vídeo: como montar o prato ideal" loading="lazy"></div>
           <div class="tile__body">
             <h3>Aulas em vídeo sobre alimentação saudável e técnicas de Meal Prep</h3>
             <p>Aprenda, sem perder tempo, como fazer suas refeições de forma equilibrada, rápida e segura. Descubra com a Adriana Silveira, médica pós-graduada em Nutrologia, como fazer as escolhas certas e montar o seu prato ideal. Aprenda as bases da alimentação consciente, sem neura de contagem de calorias.</p>
@@ -535,7 +536,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 <section class="paper section center" id="cardapios" style="padding-top:0">
   <div class="wrap">
     <div class="headline">
-      <h2 class="display-md t-blue">Cardápios variados<br>e gostosos de verdade!</h2>
+      <h2 class="display-md t-blue">Cardápios variados <br>e gostosos de verdade!</h2>
       <svg class="stk stk--star" fill="#F0548F" aria-hidden="true"><use href="#i-star"/></svg>
     </div>
     <p class="lead" style="margin-top:24px">Confira algumas das receitas que você encontrará lá</p>
@@ -594,7 +595,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 <section class="band blue scallop-both" aria-labelledby="pessoas">
   <div class="wrap center">
     <div class="headline">
-      <h2 class="display-md" id="pessoas">Por que mais de<br>20.000 pessoas<br>já fazem parte?</h2>
+      <h2 class="display-md" id="pessoas">Por que mais de <br>20.000 pessoas <br>já fazem parte?</h2>
       <svg class="stk stk--star" fill="#F0548F" aria-hidden="true"><use href="#i-star"/></svg>
     </div>
     <svg class="scribble" viewBox="0 0 760 30" aria-hidden="true"><path d="M4 14 C180 6 420 10 740 12 M60 22 C300 16 520 20 700 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
@@ -622,7 +623,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <div class="wrap">
     <div class="headline">
       <svg class="stk stk--ast" fill="#FC5430" aria-hidden="true"><use href="#i-flower"/></svg>
-      <h2 class="display t-blue" id="paraquem">Para quem é o<br>Clube Drica?</h2>
+      <h2 class="display t-blue" id="paraquem">Para quem é o <br>Clube Drica?</h2>
     </div>
     <p class="lead" style="margin-top:24px">Descubra se fazer parte desse grupo é para você</p>
     <div class="cards cards--5" role="list">
@@ -639,7 +640,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 <section class="paper section center" aria-labelledby="economia" style="padding-top:0">
   <div class="wrap">
     <div class="headline">
-      <h2 class="display-md t-blue" id="economia">Economize mais<br>de R$ 1000 por mês!</h2>
+      <h2 class="display-md t-blue" id="economia">Economize mais <br>de R$ 1000 por mês!</h2>
       <svg class="stk stk--star" fill="#F0548F" aria-hidden="true"><use href="#i-star"/></svg>
     </div>
     <p class="lead" style="margin-top:24px">Descubra como o investimento do Clube Drica pode se pagar em 1 semana!</p>
@@ -670,7 +671,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <div class="wrap">
     <div class="world lime">
       <div class="headline">
-        <h2 class="display-md">Você ainda leva<br>bônus exclusivos!</h2>
+        <h2 class="display-md">Você ainda leva <br>bônus exclusivos!</h2>
         <svg class="stk stk--ast" fill="#3C6CF0" aria-hidden="true"><use href="#i-bolt"/></svg>
       </div>
       <svg class="scribble" viewBox="0 0 760 30" aria-hidden="true"><path d="M4 14 C180 6 420 10 740 12 M60 22 C300 16 520 20 700 24" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/></svg>
@@ -691,7 +692,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     <span class="kicker pill label t-blue">Condição especial por tempo limitado</span><br>
     <div class="headline">
       <svg class="stk stk--ast" fill="#F0548F" aria-hidden="true"><use href="#i-star"/></svg>
-      <h2 class="display-md t-blue">Sua última<br>oportunidade</h2>
+      <h2 class="display-md t-blue">Sua última <br>oportunidade</h2>
       <svg class="stk stk--star" fill="#FC5430" aria-hidden="true"><use href="#i-flower"/></svg>
     </div>
     <p class="lead" style="margin-top:24px">Sua última oportunidade de ter acesso a um conteúdo transformador</p>
@@ -725,7 +726,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 <!-- ===================== DEPOIMENTOS TEXTO ===================== -->
 <section class="paper section center" aria-labelledby="economizando" style="padding-top:0">
   <div class="wrap">
-    <h2 class="display-md t-blue" id="economizando">Olha como as<br>pessoas estão<br>economizando</h2>
+    <h2 class="display-md t-blue" id="economizando">Olha como as <br>pessoas estão <br>economizando</h2>
     <p class="lead" style="margin-top:24px">com o Clube Drica</p>
     <div class="quotes" style="text-align:left">
       <figure class="quote"><div class="quote__body"><svg class="card__shape" fill="#fff" aria-hidden="true" viewBox="0 0 100 100"><use href="#i-star"/></svg><blockquote><p>“Um mês de cozinha com as marmitinhas. 450,00 de economia.”</p></blockquote><span class="quote__init" aria-hidden="true">M</span></div><figcaption class="badge__rows"><span class="badge__row"><span>Nome</span><span>Mariana</span></span><span class="badge__row"><span>Aluna do</span><span>Clube Drica</span></span></figcaption></figure>
@@ -738,7 +739,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 <!-- ===================== DÚVIDAS ===================== -->
 <section class="paper section center" id="duvidas" style="padding-top:0">
   <div class="wrap">
-    <h2 class="display t-blue">Dúvidas e<br>respostas</h2>
+    <h2 class="display t-blue">Dúvidas e <br>respostas</h2>
     <p class="lead" style="margin-top:24px">Encontre as respostas para as perguntas mais comuns</p>
     <div class="faq" style="text-align:left">
       <details><summary>Tenho garantia?<i aria-hidden="true"></i></summary><p>O reembolso pode ser solicitado e integralmente efetivado dentro do prazo de 7 dias a partir da data de confirmação do pagamento. Após esse período não será possível solicitar o reembolso e ter o valor devolvido. O reembolso deve ser solicitado diretamente pelo comprador na plataforma Cakto. Atenção: começa a contar a partir da data e horário da confirmação do pagamento.</p></details>

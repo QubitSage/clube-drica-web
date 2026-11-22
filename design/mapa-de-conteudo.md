@@ -30,8 +30,10 @@ Todo texto vem do index.html antigo. Ordem de venda do site antigo mantida.
 ## [FALTA] — o que o cliente precisa mandar
 
 1. **ID do vídeo de amostra** do YouTube (o embed antigo está quebrado com `ID`).
-2. **Imagens hospedadas em outro domínio**: depoimentos DEPO1–8, capas dos e-books, cardápio em PDF, módulos bônus vêm de `marianabovolon.com.br`. Se aquele site sair do ar, essas imagens somem. Mandar os arquivos para hospedar aqui.
+2. **Imagens de outra autora, hospedadas em outro domínio**: depoimentos DEPO1–8, capas dos e-books, cardápio em PDF, módulos bônus vêm de `marianabovolon.com.br`. Se aquele site sair do ar, essas imagens somem. Além disso, as capas dos e-books mostram o nome "Mariana Bovolon" e os prints de depoimento vêm da página dela. Mandar as capas e prints da Adriana para hospedar aqui.
 3. **Fotos dos alunos** dos 3 depoimentos de texto (crachás ficaram sem foto, só com a inicial).
 4. **Números**: o site diz "+ de 20.000 alunas" e, na bio, "Marmita Express… mais de 15.000 alunas". Confirmar qual vale.
 5. **Pixels e Analytics**: os IDs (Facebook 2999795973667393, GA G-Y64D7ERVPM, Ads AW-16875532386, GTM-PQL5GGF, TikTok D21CC1RC77U0KS93QQKG) vieram junto com a cópia da página e o GA aponta o domínio `marianabovolon.com.br`. Confirmar se são da Adriana.
 6. **Logo**: não existe; usei um wordmark "Drica" provisório.
+7. **Nomes das abas de cardápio**: o site antigo só nomeava o "Cardápio 8"; numerei os outros de 1 a 7 na ordem em que apareciam.
+8. **"Clube PSS"**: o título antigo "Quais as vantagens do Clube PSS?" virou "Clube Drica" (sobra da cópia).
