@@ -106,9 +106,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .hero__checks{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:28px}
 .hero__photo{height:560px;margin-top:-1px}
 .hero__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
-.hero .stk--flower{width:100px;top:232px;left:21%}
-.hero .stk--ast{width:104px;top:226px;right:20%;transform:rotate(14deg)}
-.hero .stk--bolt{width:62px;top:150px;left:22.5%;transform:rotate(-6deg);z-index:2}
+.h1-line{position:relative;display:inline-block}
+.h1-bolt{position:absolute;width:.46em;height:.76em;left:1.02em;top:.52em;transform:rotate(-6deg)}
+.h1-flower{position:absolute;width:.78em;height:.78em;left:-1.12em;top:.08em}
+.h1-ast{position:absolute;width:.82em;height:.82em;right:-1.14em;top:.02em;transform:rotate(14deg)}
 
 /* ---------- manifesto lima ---------- */
 .manifesto{position:relative;overflow:hidden;text-align:center}
@@ -305,9 +306,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .hero__cta .arrow{display:none}
   .hero__checks .pill{font-size:11px;height:28px}
   .hero__photo{height:300px}
-  .hero .stk--flower{width:40px;top:100px;left:8%}
-  .hero .stk--ast{width:42px;top:96px;right:8%}
-  .hero .stk--bolt{width:24px;top:40px;left:9%}
   .hero h1{line-height:1}
   .section .display br,.band .display-md br,.section .display-md br{display:none}
   .pile li{height:auto;min-height:44px;padding:10px 20px;white-space:normal;text-align:center;line-height:1.15;max-width:100%}
@@ -382,12 +380,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     </nav>
 
     <div class="hero__body">
-      <svg class="stk stk--bolt" fill="#CAFA5F" aria-hidden="true"><use href="#i-bolt"/></svg>
-      <svg class="stk stk--flower" fill="#FC5430" aria-hidden="true"><use href="#i-flower"/></svg>
-      <svg class="stk stk--ast" fill="#B490FC" aria-hidden="true"><use href="#i-ast"/></svg>
 
       <span class="hero__badge pill label">Acesso vitalício com 75% de desconto</span>
-      <h1 class="display" aria-label="Transforme a sua alimentação"><span aria-hidden="true">Transf<svg class="o-star" fill="#F0548F"><use href="#i-star"/></svg>rme<br><span class="h1-mid">a sua</span><br>alimentação</span></h1>
+      <h1 class="display" aria-label="Transforme a sua alimentação"><span aria-hidden="true"><span class="h1-line">Transf<svg class="o-star" fill="#F0548F"><use href="#i-star"/></svg>rme<svg class="h1-bolt" fill="#CAFA5F"><use href="#i-bolt"/></svg></span><br><span class="h1-line">a sua<svg class="h1-flower" fill="#FC5430"><use href="#i-flower"/></svg><svg class="h1-ast" fill="#B490FC"><use href="#i-ast"/></svg></span><br>alimentação</span></h1>
       <p class="hero__sub statement">cozinhando apenas <span class="hand hand--white">1 hora</span> para até 15 dias</p>
       <div class="hero__cta btn-row">
         <a class="btn btn--pink" href="https://pay.cakto.com.br/ij3ekbu_416993">Quero começar (4x R$5,77)</a>
