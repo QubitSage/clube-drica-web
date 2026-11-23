@@ -1,0 +1,907 @@
+[
+  {
+    "janela": "1440x900",
+    "tela": "1440×900",
+    "url": "file:///home/claude/clube-drica-web/index.html",
+    "piscando": [],
+    "sobrepostos": [
+      {
+        "a": "svg",
+        "b": "img",
+        "area": 199598
+      },
+      {
+        "a": "img",
+        "b": "span.hand.rv-draw \"METODOLOGIA DE PREPARO\"",
+        "area": 54408
+      },
+      {
+        "a": "p",
+        "b": "summary \"POR QUANTO TEMPO TENHO ACESSO?\"",
+        "area": 49168
+      },
+      {
+        "a": "p",
+        "b": "summary \"QUANTO TEMPO DE ACESSO TENHO À\"",
+        "area": 49168
+      },
+      {
+        "a": "p",
+        "b": "p",
+        "area": 36876
+      },
+      {
+        "a": "svg",
+        "b": "p \"Você já pensou que gasta até 2\"",
+        "area": 35339
+      },
+      {
+        "a": "p.plan__stat \"+ DE 10 HORAS\"",
+        "b": "svg",
+        "area": 27865
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO TEREI ACESSO ÀS AULAS?\"",
+        "area": 26779
+      },
+      {
+        "a": "p",
+        "b": "summary \"HÁ RENOVAÇÃO AUTOMÁTICA?\"",
+        "area": 26779
+      },
+      {
+        "a": "p",
+        "b": "summary \"AS RECEITAS DOS CARDÁPIOS SÃO \"",
+        "area": 26779
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO POSSO TIRAR DÚVIDAS?\"",
+        "area": 26779
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO TEREI ACESSO ÀS AULAS?\"",
+        "area": 26340
+      },
+      {
+        "a": "svg",
+        "b": "p \"Na correria do dia-a-dia acaba\"",
+        "area": 24461
+      },
+      {
+        "a": "svg",
+        "b": "p \"Com mais tempo na semana você \"",
+        "area": 22622
+      },
+      {
+        "a": "svg",
+        "b": "p \"“COZINHO 30 MARMITAS COM 150 R\"",
+        "area": 20443
+      },
+      {
+        "a": "svg",
+        "b": "p \"Fazendo a comida em casa e arm\"",
+        "area": 18346
+      },
+      {
+        "a": "p",
+        "b": "p",
+        "area": 17121
+      },
+      {
+        "a": "svg",
+        "b": "a.plan__cta \"COMECE AGORA\"",
+        "area": 15704
+      },
+      {
+        "a": "svg",
+        "b": "p \"“UM MÊS DE COZINHA COM AS MARM\"",
+        "area": 15331
+      },
+      {
+        "a": "svg",
+        "b": "p \"“UMA COISA QUE TEM QUE SER DIT\"",
+        "area": 15331
+      },
+      {
+        "a": "svg",
+        "b": "p \"E-book Airfryer, receitas de c\"",
+        "area": 15198
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER ECONOMIZAR DINH\"",
+        "b": "svg",
+        "area": 14692
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER MANTER O FOCO N\"",
+        "b": "svg",
+        "area": 14692
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER CUIDAR DO CORPO\"",
+        "b": "svg",
+        "area": 14692
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER TER UMA VIDA MA\"",
+        "b": "svg",
+        "area": 14692
+      },
+      {
+        "a": "svg",
+        "b": "li \"Bônus: E-book 80 Receitas Deli\"",
+        "area": 13854
+      },
+      {
+        "a": "svg",
+        "b": "li \"Bônus: E-book com 20 Receitas \"",
+        "area": 12969
+      },
+      {
+        "a": "svg",
+        "b": "li \"Bônus: Módulo de saladas para \"",
+        "area": 12969
+      },
+      {
+        "a": "svg",
+        "b": "li \"Bônus: Módulo de café da manhã\"",
+        "area": 12969
+      },
+      {
+        "a": "svg",
+        "b": "li \"Suporte integral de dúvidas\"",
+        "area": 12969
+      }
+    ],
+    "cobertos": [],
+    "cortados": [
+      {
+        "cortado": "a.btn.btn--white \"QUERO COMEÇAR\"",
+        "visivel": "155×40",
+        "conteudo": "155×81"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"QUERO COMEÇAR (4X R$5,77)\"",
+        "visivel": "265×48",
+        "conteudo": "265×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      }
+    ],
+    "botoes": {
+      "variantes": 5,
+      "lista": [
+        {
+          "aparencia": "altura 52 · raio 18px 18px 0px 0px · fonte 13px/600 · Urbanist",
+          "quantos": 9,
+          "exemplos": [
+            "button#t2.tab \"CARDÁPIO 2\"",
+            "button#t3.tab \"CARDÁPIO 3\"",
+            "button#t4.tab \"CARDÁPIO 4\""
+          ]
+        },
+        {
+          "aparencia": "altura 48 · raio 999px · fonte 14px/700 · Urbanist",
+          "quantos": 6,
+          "exemplos": [
+            "a.btn.btn--pink \"QUERO COMEÇAR (4X R$5,77)\"",
+            "a.btn.btn--pink \"COMECE AGORA\"",
+            "a.btn.btn--pink \"COMECE AGORA\""
+          ]
+        },
+        {
+          "aparencia": "altura 44 · raio 999px · fonte 16px/500 · Urbanist",
+          "quantos": 2,
+          "exemplos": [
+            "button \"Depoimentos anteriores\"",
+            "button \"Próximos depoimentos\""
+          ]
+        },
+        {
+          "aparencia": "altura 40 · raio 999px · fonte 13px/700 · Urbanist",
+          "quantos": 1,
+          "exemplos": [
+            "a.btn.btn--white \"QUERO COMEÇAR\""
+          ]
+        },
+        {
+          "aparencia": "altura 60 · raio 18px 18px 0px 0px · fonte 13px/600 · Urbanist",
+          "quantos": 1,
+          "exemplos": [
+            "button#t1.tab \"CARDÁPIO 1\""
+          ]
+        }
+      ]
+    },
+    "quaseAlinhados": [
+      {
+        "dentroDe": "p.lead.rv \"No Clube você encontra as minh\"",
+        "a": "b \"ter mais praticidade, economiz\"",
+        "b": "b \"cuida do corpo e come com praz\"",
+        "diferencaPx": 2
+      },
+      {
+        "dentroDe": "article.card.card--pink \"01 PARA QUEM TEM UMA VIDA CORR\"",
+        "a": "span.card__num \"01\"",
+        "b": "svg",
+        "diferencaPx": 1
+      },
+      {
+        "dentroDe": "article.card.card--lilac \"02 PARA QUEM QUER ECONOMIZAR D\"",
+        "a": "span.card__num \"02\"",
+        "b": "svg",
+        "diferencaPx": 1
+      },
+      {
+        "dentroDe": "article.card.card--coral \"03 PARA QUEM QUER MANTER O FOC\"",
+        "a": "span.card__num \"03\"",
+        "b": "svg",
+        "diferencaPx": 1
+      },
+      {
+        "dentroDe": "article.card.card--blue \"04 PARA QUEM QUER CUIDAR DO CO\"",
+        "a": "span.card__num \"04\"",
+        "b": "svg",
+        "diferencaPx": 1
+      },
+      {
+        "dentroDe": "article.card.card--lime \"05 PARA QUEM QUER TER UMA VIDA\"",
+        "a": "span.card__num \"05\"",
+        "b": "svg",
+        "diferencaPx": 1
+      }
+    ],
+    "pulos": {
+      "cls": 0,
+      "tarefasLongas": 0,
+      "quemPulou": []
+    },
+    "erros": [
+      "Access to font at 'file:///home/claude/clube-drica-web/assets/fonts/archivo-latin.woff2' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.",
+      "falhou: file:///home/claude/clube-drica-web/assets/fonts/archivo-latin.woff2",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to font at 'file:///home/claude/clube-drica-web/assets/fonts/urbanist-latin.woff2' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.",
+      "falhou: file:///home/claude/clube-drica-web/assets/fonts/urbanist-latin.woff2",
+      "Failed to load resource: net::ERR_FAILED",
+      "falhou: https://www.googletagmanager.com/gtag/js?id=G-Y64D7ERVPM",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D21CC1RC77U0KS93QQKG&lib=ttq",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://www.googletagmanager.com/gtm.js?id=GTM-PQL5GGF",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://connect.facebook.net/en_US/fbevents.js",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    ]
+  },
+  {
+    "janela": "1366x768",
+    "tela": "1366×768",
+    "url": "file:///home/claude/clube-drica-web/index.html",
+    "piscando": [],
+    "sobrepostos": [
+      {
+        "a": "svg",
+        "b": "img",
+        "area": 199598
+      },
+      {
+        "a": "p",
+        "b": "summary \"POR QUANTO TEMPO TENHO ACESSO?\"",
+        "area": 49168
+      },
+      {
+        "a": "p",
+        "b": "summary \"QUANTO TEMPO DE ACESSO TENHO À\"",
+        "area": 49168
+      },
+      {
+        "a": "img",
+        "b": "span.hand.rv-draw \"METODOLOGIA DE PREPARO\"",
+        "area": 47866
+      },
+      {
+        "a": "p",
+        "b": "p",
+        "area": 36876
+      },
+      {
+        "a": "svg",
+        "b": "p \"Você já pensou que gasta até 2\"",
+        "area": 35808
+      },
+      {
+        "a": "span.hand.rv-draw \"ROTINA ORGANIZADA\"",
+        "b": "span.hand.rv-draw \"NÃO PRECISA PERDER HORAS\"",
+        "area": 34288
+      },
+      {
+        "a": "p.plan__stat \"+ DE 10 HORAS\"",
+        "b": "svg",
+        "area": 32184
+      },
+      {
+        "a": "svg",
+        "b": "p \"Com mais tempo na semana você \"",
+        "area": 26845
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO TEREI ACESSO ÀS AULAS?\"",
+        "area": 26779
+      },
+      {
+        "a": "p",
+        "b": "summary \"HÁ RENOVAÇÃO AUTOMÁTICA?\"",
+        "area": 26779
+      },
+      {
+        "a": "p",
+        "b": "summary \"AS RECEITAS DOS CARDÁPIOS SÃO \"",
+        "area": 26779
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO POSSO TIRAR DÚVIDAS?\"",
+        "area": 26779
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO TEREI ACESSO ÀS AULAS?\"",
+        "area": 26340
+      },
+      {
+        "a": "svg",
+        "b": "p \"Na correria do dia-a-dia acaba\"",
+        "area": 24970
+      },
+      {
+        "a": "svg",
+        "b": "p \"“COZINHO 30 MARMITAS COM 150 R\"",
+        "area": 20443
+      },
+      {
+        "a": "svg",
+        "b": "p \"Fazendo a comida em casa e arm\"",
+        "area": 18727
+      },
+      {
+        "a": "p",
+        "b": "p",
+        "area": 17121
+      },
+      {
+        "a": "svg",
+        "b": "li \"Bônus: E-book 80 Receitas Deli\"",
+        "area": 16087
+      },
+      {
+        "a": "svg",
+        "b": "a.plan__cta \"COMECE AGORA\"",
+        "area": 15996
+      },
+      {
+        "a": "svg",
+        "b": "p \"“UM MÊS DE COZINHA COM AS MARM\"",
+        "area": 15331
+      },
+      {
+        "a": "svg",
+        "b": "p \"“UMA COISA QUE TEM QUE SER DIT\"",
+        "area": 15331
+      },
+      {
+        "a": "svg",
+        "b": "p \"E-book Airfryer, receitas de c\"",
+        "area": 15198
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER ECONOMIZAR DINH\"",
+        "b": "svg",
+        "area": 14692
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER MANTER O FOCO N\"",
+        "b": "svg",
+        "area": 14692
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER CUIDAR DO CORPO\"",
+        "b": "svg",
+        "area": 14692
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER TER UMA VIDA MA\"",
+        "b": "svg",
+        "area": 14692
+      },
+      {
+        "a": "svg",
+        "b": "li \"Bônus: E-book com 20 Receitas \"",
+        "area": 13218
+      },
+      {
+        "a": "svg",
+        "b": "li \"Bônus: Módulo de saladas para \"",
+        "area": 13218
+      },
+      {
+        "a": "svg",
+        "b": "li \"Bônus: Módulo de café da manhã\"",
+        "area": 13218
+      }
+    ],
+    "cobertos": [],
+    "cortados": [
+      {
+        "cortado": "a.btn.btn--white \"QUERO COMEÇAR\"",
+        "visivel": "155×40",
+        "conteudo": "155×81"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"QUERO COMEÇAR (4X R$5,77)\"",
+        "visivel": "265×48",
+        "conteudo": "265×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      }
+    ],
+    "botoes": {
+      "variantes": 5,
+      "lista": [
+        {
+          "aparencia": "altura 52 · raio 18px 18px 0px 0px · fonte 13px/600 · Urbanist",
+          "quantos": 9,
+          "exemplos": [
+            "button#t2.tab \"CARDÁPIO 2\"",
+            "button#t3.tab \"CARDÁPIO 3\"",
+            "button#t4.tab \"CARDÁPIO 4\""
+          ]
+        },
+        {
+          "aparencia": "altura 48 · raio 999px · fonte 14px/700 · Urbanist",
+          "quantos": 6,
+          "exemplos": [
+            "a.btn.btn--pink \"QUERO COMEÇAR (4X R$5,77)\"",
+            "a.btn.btn--pink \"COMECE AGORA\"",
+            "a.btn.btn--pink \"COMECE AGORA\""
+          ]
+        },
+        {
+          "aparencia": "altura 44 · raio 999px · fonte 16px/500 · Urbanist",
+          "quantos": 2,
+          "exemplos": [
+            "button \"Depoimentos anteriores\"",
+            "button \"Próximos depoimentos\""
+          ]
+        },
+        {
+          "aparencia": "altura 40 · raio 999px · fonte 13px/700 · Urbanist",
+          "quantos": 1,
+          "exemplos": [
+            "a.btn.btn--white \"QUERO COMEÇAR\""
+          ]
+        },
+        {
+          "aparencia": "altura 60 · raio 18px 18px 0px 0px · fonte 13px/600 · Urbanist",
+          "quantos": 1,
+          "exemplos": [
+            "button#t1.tab \"CARDÁPIO 1\""
+          ]
+        }
+      ]
+    },
+    "quaseAlinhados": [
+      {
+        "dentroDe": "p.lead.rv \"No Clube você encontra as minh\"",
+        "a": "b \"ter mais praticidade, economiz\"",
+        "b": "b \"cuida do corpo e come com praz\"",
+        "diferencaPx": 2
+      },
+      {
+        "dentroDe": "article.card.card--pink \"01 PARA QUEM TEM UMA VIDA CORR\"",
+        "a": "span.card__num \"01\"",
+        "b": "svg",
+        "diferencaPx": 1
+      },
+      {
+        "dentroDe": "article.card.card--lilac \"02 PARA QUEM QUER ECONOMIZAR D\"",
+        "a": "span.card__num \"02\"",
+        "b": "svg",
+        "diferencaPx": 1
+      },
+      {
+        "dentroDe": "article.card.card--coral \"03 PARA QUEM QUER MANTER O FOC\"",
+        "a": "span.card__num \"03\"",
+        "b": "svg",
+        "diferencaPx": 1
+      },
+      {
+        "dentroDe": "article.card.card--blue \"04 PARA QUEM QUER CUIDAR DO CO\"",
+        "a": "span.card__num \"04\"",
+        "b": "svg",
+        "diferencaPx": 1
+      },
+      {
+        "dentroDe": "article.card.card--lime \"05 PARA QUEM QUER TER UMA VIDA\"",
+        "a": "span.card__num \"05\"",
+        "b": "svg",
+        "diferencaPx": 1
+      }
+    ],
+    "pulos": {
+      "cls": 0,
+      "tarefasLongas": 0,
+      "quemPulou": []
+    },
+    "erros": [
+      "Access to font at 'file:///home/claude/clube-drica-web/assets/fonts/archivo-latin.woff2' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.",
+      "falhou: file:///home/claude/clube-drica-web/assets/fonts/archivo-latin.woff2",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to font at 'file:///home/claude/clube-drica-web/assets/fonts/urbanist-latin.woff2' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.",
+      "falhou: file:///home/claude/clube-drica-web/assets/fonts/urbanist-latin.woff2",
+      "Failed to load resource: net::ERR_FAILED",
+      "falhou: https://www.googletagmanager.com/gtag/js?id=G-Y64D7ERVPM",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://www.googletagmanager.com/gtm.js?id=GTM-PQL5GGF",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://connect.facebook.net/en_US/fbevents.js",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D21CC1RC77U0KS93QQKG&lib=ttq",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    ]
+  },
+  {
+    "janela": "390",
+    "tela": "390×664",
+    "url": "file:///home/claude/clube-drica-web/index.html",
+    "piscando": [],
+    "sobrepostos": [
+      {
+        "a": "svg",
+        "b": "svg",
+        "area": 74228
+      },
+      {
+        "a": "svg",
+        "b": "img",
+        "area": 46226
+      },
+      {
+        "a": "p",
+        "b": "p",
+        "area": 38804
+      },
+      {
+        "a": "svg",
+        "b": "svg",
+        "area": 28499
+      },
+      {
+        "a": "svg",
+        "b": "svg",
+        "area": 28499
+      },
+      {
+        "a": "svg",
+        "b": "svg",
+        "area": 26623
+      },
+      {
+        "a": "svg",
+        "b": "h2#economia.display-md.t-blue \"ECONOMIZE MAIS DE R$ 1000 POR \"",
+        "area": 25799
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER CUIDAR DO CORPO\"",
+        "b": "svg",
+        "area": 25009
+      },
+      {
+        "a": "svg",
+        "b": "h3 \"PARA QUEM QUER TER UMA VIDA MA\"",
+        "area": 25009
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER TER UMA VIDA MA\"",
+        "b": "svg",
+        "area": 25009
+      },
+      {
+        "a": "svg",
+        "b": "h3 \"PARA QUEM QUER CUIDAR DO CORPO\"",
+        "area": 23569
+      },
+      {
+        "a": "svg",
+        "b": "p \"Com mais tempo na semana você \"",
+        "area": 23565
+      },
+      {
+        "a": "svg",
+        "b": "p \"Você já pensou que gasta até 2\"",
+        "area": 23421
+      },
+      {
+        "a": "p",
+        "b": "p",
+        "area": 23140
+      },
+      {
+        "a": "p",
+        "b": "p",
+        "area": 23140
+      },
+      {
+        "a": "svg",
+        "b": "h2#economia.display-md.t-blue \"ECONOMIZE MAIS DE R$ 1000 POR \"",
+        "area": 22151
+      },
+      {
+        "a": "p",
+        "b": "summary \"QUANTO TEMPO DE ACESSO TENHO À\"",
+        "area": 21494
+      },
+      {
+        "a": "p",
+        "b": "summary \"QUANTO TEMPO DE ACESSO TENHO À\"",
+        "area": 21494
+      },
+      {
+        "a": "p",
+        "b": "summary \"POR QUANTO TEMPO TENHO ACESSO?\"",
+        "area": 19936
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO TEREI ACESSO ÀS AULAS?\"",
+        "area": 19936
+      },
+      {
+        "a": "p",
+        "b": "summary \"HÁ RENOVAÇÃO AUTOMÁTICA?\"",
+        "area": 19936
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO POSSO TIRAR DÚVIDAS?\"",
+        "area": 19936
+      },
+      {
+        "a": "p",
+        "b": "summary \"COMO TEREI ACESSO ÀS AULAS?\"",
+        "area": 18868
+      },
+      {
+        "a": "p",
+        "b": "summary \"HÁ RENOVAÇÃO AUTOMÁTICA?\"",
+        "area": 18868
+      },
+      {
+        "a": "h3 \"PARA QUEM TEM UMA VIDA CORRIDA\"",
+        "b": "svg",
+        "area": 18757
+      },
+      {
+        "a": "svg",
+        "b": "h3 \"PARA QUEM QUER ECONOMIZAR DINH\"",
+        "area": 18757
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER ECONOMIZAR DINH\"",
+        "b": "svg",
+        "area": 18757
+      },
+      {
+        "a": "svg",
+        "b": "h3 \"PARA QUEM QUER MANTER O FOCO N\"",
+        "area": 18757
+      },
+      {
+        "a": "h3 \"PARA QUEM QUER MANTER O FOCO N\"",
+        "b": "svg",
+        "area": 18757
+      },
+      {
+        "a": "svg",
+        "b": "p \"“UMA COISA QUE TEM QUE SER DIT\"",
+        "area": 16841
+      }
+    ],
+    "cobertos": [],
+    "cortados": [
+      {
+        "cortado": "a.btn.btn--white \"QUERO COMEÇAR\"",
+        "visivel": "134×36",
+        "conteudo": "134×73"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"QUERO COMEÇAR (4X R$5,77)\"",
+        "visivel": "238×48",
+        "conteudo": "238×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "foraDaTela": "button#t4.tab \"CARDÁPIO 4\"",
+        "left": 356,
+        "right": 461
+      },
+      {
+        "foraDaTela": "button#t5.tab \"CARDÁPIO 5\"",
+        "left": 466,
+        "right": 572
+      },
+      {
+        "foraDaTela": "button#t6.tab \"CARDÁPIO 6\"",
+        "left": 577,
+        "right": 682
+      },
+      {
+        "foraDaTela": "button#t7.tab \"CARDÁPIO 7\"",
+        "left": 687,
+        "right": 792
+      },
+      {
+        "foraDaTela": "button#t8.tab \"CARDÁPIO 8\"",
+        "left": 797,
+        "right": 903
+      },
+      {
+        "foraDaTela": "button#t9.tab \"BÔNUS CAFÉ\"",
+        "left": 908,
+        "right": 1017
+      },
+      {
+        "foraDaTela": "button#t10.tab \"BÔNUS SALADAS\"",
+        "left": 1022,
+        "right": 1156
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      },
+      {
+        "cortado": "a.btn.btn--pink \"COMECE AGORA\"",
+        "visivel": "171×48",
+        "conteudo": "171×97"
+      }
+    ],
+    "botoes": {
+      "variantes": 6,
+      "lista": [
+        {
+          "aparencia": "altura 46 · raio 14px 14px 0px 0px · fonte 13px/600 · Urbanist",
+          "quantos": 9,
+          "exemplos": [
+            "button#t2.tab \"CARDÁPIO 2\"",
+            "button#t3.tab \"CARDÁPIO 3\"",
+            "button#t4.tab \"CARDÁPIO 4\""
+          ]
+        },
+        {
+          "aparencia": "altura 48 · raio 999px · fonte 14px/700 · Urbanist",
+          "quantos": 5,
+          "exemplos": [
+            "a.btn.btn--pink \"COMECE AGORA\"",
+            "a.btn.btn--pink \"COMECE AGORA\"",
+            "a.btn.btn--pink \"COMECE AGORA\""
+          ]
+        },
+        {
+          "aparencia": "altura 44 · raio 999px · fonte 16px/500 · Urbanist",
+          "quantos": 2,
+          "exemplos": [
+            "button \"Depoimentos anteriores\"",
+            "button \"Próximos depoimentos\""
+          ]
+        },
+        {
+          "aparencia": "altura 36 · raio 999px · fonte 12px/700 · Urbanist",
+          "quantos": 1,
+          "exemplos": [
+            "a.btn.btn--white \"QUERO COMEÇAR\""
+          ]
+        },
+        {
+          "aparencia": "altura 48 · raio 999px · fonte 13px/700 · Urbanist",
+          "quantos": 1,
+          "exemplos": [
+            "a.btn.btn--pink \"QUERO COMEÇAR (4X R$5,77)\""
+          ]
+        },
+        {
+          "aparencia": "altura 52 · raio 14px 14px 0px 0px · fonte 13px/600 · Urbanist",
+          "quantos": 1,
+          "exemplos": [
+            "button#t1.tab \"CARDÁPIO 1\""
+          ]
+        }
+      ]
+    },
+    "quaseAlinhados": [],
+    "pulos": {
+      "cls": 0,
+      "tarefasLongas": 0,
+      "quemPulou": []
+    },
+    "erros": [
+      "Access to font at 'file:///home/claude/clube-drica-web/assets/fonts/archivo-latin.woff2' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.",
+      "falhou: file:///home/claude/clube-drica-web/assets/fonts/archivo-latin.woff2",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to font at 'file:///home/claude/clube-drica-web/assets/fonts/urbanist-latin.woff2' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.",
+      "falhou: file:///home/claude/clube-drica-web/assets/fonts/urbanist-latin.woff2",
+      "Failed to load resource: net::ERR_FAILED",
+      "falhou: https://connect.facebook.net/en_US/fbevents.js",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D21CC1RC77U0KS93QQKG&lib=ttq",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://www.googletagmanager.com/gtag/js?id=G-Y64D7ERVPM",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+      "falhou: https://www.googletagmanager.com/gtm.js?id=GTM-PQL5GGF",
+      "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    ]
+  }
+]

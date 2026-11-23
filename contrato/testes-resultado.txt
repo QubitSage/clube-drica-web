@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: todos os botões de compra vão para o mesmo checkout Cakto
+ok 1 - todos os botões de compra vão para o mesmo checkout Cakto
+  ---
+  duration_ms: 2.105248
+  type: 'test'
+  ...
+# Subtest: preços do Plano Gold
+ok 2 - preços do Plano Gold
+  ---
+  duration_ms: 0.343371
+  type: 'test'
+  ...
+# Subtest: Plano Gold tem os 10 itens
+ok 3 - Plano Gold tem os 10 itens
+  ---
+  duration_ms: 0.192205
+  type: 'test'
+  ...
+# Subtest: 10 abas de cardápio (8 cardápios + 2 bônus)
+ok 4 - 10 abas de cardápio (8 cardápios + 2 bônus)
+  ---
+  duration_ms: 0.196396
+  type: 'test'
+  ...
+# Subtest: 7 dúvidas no FAQ
+ok 5 - 7 dúvidas no FAQ
+  ---
+  duration_ms: 0.133002
+  type: 'test'
+  ...
+# Subtest: pixels e analytics continuam no head (IDs a confirmar com o cliente, não remover)
+ok 6 - pixels e analytics continuam no head (IDs a confirmar com o cliente, não remover)
+  ---
+  duration_ms: 0.079292
+  type: 'test'
+  ...
+# Subtest: ordem das seções
+ok 7 - ordem das seções
+  ---
+  duration_ms: 0.453736
+  type: 'test'
+  ...
+# Subtest: frases-chave da oferta
+ok 8 - frases-chave da oferta
+  ---
+  duration_ms: 0.103502
+  type: 'test'
+  ...
+# Subtest: links legais e contato
+ok 9 - links legais e contato
+  ---
+  duration_ms: 0.216719
+  type: 'test'
+  ...
+# Subtest: fontes servidas do repositório
+ok 10 - fontes servidas do repositório
+  ---
+  duration_ms: 0.251816
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 57.108087
